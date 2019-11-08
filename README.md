@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+   Adaptive websites "adapts" at different break-points or screen sizes: "snaps" to a different style or size. Often applied in fixed/hard coding like px.
+   The drawbacks include some content being different and having to factor in multiple designs for each screen size, as well as longer load times as each separate design has to be loaded. 
+
+   Fully Responsive adjusts all pieces of content and combines the break-points of adaptive but "smooths" things out between breakpoints by adjusting as the screen size changes.
+   The biggest disadvantage here is that it can be very difficult to ensure the design works on all levels.
+   
+   Both are methods for managing the reality that websites are more commonly viewed on different devices as mobile technology continues to advance.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first is designing code for mobile or phone first: usually this would mean that designs start out simpler and as the screen space expands, the complexity of the layout and function also expands - uses min-width media queries.
+
+    Desktop first is effectively the opposite and would adjust as the screen gets smaller - uses max-width media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It sets the root to make conversions easier making 1 rem = 10px as the default font-size of the browser is usually 16px (setting at 100% would make 1rem = 16px). 62.5% of 16 is 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is the equivalent of adding more tools to a CSS tool-kit: coding everything in vanilla CSS can be time-consuming (like turning a screw into a wall with a screw driver), and preprocessing allows us to remove the liklihood of human error and speed up the process (screwing that same screw, but with a drill) by minimizing the number of times we write repeating code.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I really like the parametric mixins. It seems like it would really make things simpler, but easier to tailor on larger sites with multiple pages with similar elements.
+    Nesting causes me the most trouble mostly when incorporating the mobile styling. Often I have a hard enough time seeing what code is doing what and it seems really easy to miss a bracket and throw things off.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
