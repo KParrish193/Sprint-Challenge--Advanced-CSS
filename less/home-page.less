@@ -12,6 +12,9 @@
       padding:0 15px;
     }
   
+    img {
+      border-radius: 5px;
+    }
   }
 
   .space-images {
@@ -58,6 +61,13 @@
       }
 
       .btn {
+        .btnmix(@btn-bg-color, white);
+      }
+
+      .btn:hover {
+        .btnmix(@footer-background,@main-font-color);
+        border: 1px solid @btn-bg-color;
+        cursor:pointer;
       }
     }
 
