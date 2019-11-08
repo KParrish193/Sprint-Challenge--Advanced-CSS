@@ -184,15 +184,29 @@ header nav {
   width: 100%;
   padding: 2% 0 0;
 }
+@media (max-width: 500px) {
+  header nav {
+    padding: 2% 4%;
+  }
+}
 header nav a {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #454A59;
   width: 10%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
 }
 header nav a:hover {
   text-decoration: underline;
@@ -206,6 +220,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -216,10 +231,26 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -243,11 +274,32 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin: 2% 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin: 10px 0;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -256,17 +308,26 @@ footer {
   background-color: #22283A;
   color: white;
   font-size: 1.8rem;
-  width: 30%;
   border-radius: 7px;
   padding: 2% 6%;
   text-align: center;
   display: inline;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6% 0;
+  }
 }
 .home .walk .walk-text .btn:hover {
   background-color: #F6F6F6;
   color: #5E6164;
   font-size: 1.8rem;
-  width: 30%;
   border-radius: 7px;
   padding: 2% 6%;
   text-align: center;
@@ -277,6 +338,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

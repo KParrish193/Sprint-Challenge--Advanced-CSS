@@ -4,7 +4,6 @@
     background-color: @btncolor;
     color: @btntxtcolor;
     font-size: 1.8rem;
-    width: 30%;
     border-radius: 7px;
     padding: 2% 6%;
     text-align: center;
@@ -14,13 +13,12 @@
 .navflex (@navdirection, @justify){
     display: flex;
     flex-direction: @navdirection;
-    justify-content: @justify
+    justify-content: @justify;
 }
 
-.phoneflex (@direction, @width){
+.phoneflex (@direction){
     display: flex;
     flex-direction: @direction;
-    width: @width;
     justify-content: center;
     align-items: center;
 }
