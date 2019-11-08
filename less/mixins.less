@@ -1,6 +1,6 @@
 // Mixins Here
 
-.btnmix (@btncolor, @btntxtcolor) {
+.btnmix (@btncolor, @btntxtcolor){
     background-color: @btncolor;
     color: @btntxtcolor;
     font-size: 1.8rem;
@@ -9,4 +9,18 @@
     padding: 2% 6%;
     text-align: center;
     display: inline;
+}
+
+.navflex (@navdirection, @justify){
+    display: flex;
+    flex-direction: @navdirection;
+    justify-content: @justify
+}
+
+.phoneflex (@direction, @width){
+    display: flex;
+    flex-direction: @direction;
+    width: @width;
+    justify-content: center;
+    align-items: center;
 }

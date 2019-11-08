@@ -1,1 +1,34 @@
 // Navigation code here
+header {
+    .navflex(column, center);
+    width:100%;
+    padding: 1%;
+    background-color: @nav-bg;
+    border-bottom: 2px @nav-border solid;
+
+    h1 {
+        .navflex(row, center);
+        text-align: center;
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+    nav {
+        .navflex(row, center);
+        width: 100%;
+        padding: 2% 0 0;
+        
+        a {
+            .navflex(row, space-around);
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
+            width: 10%;
+        }
+        
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
